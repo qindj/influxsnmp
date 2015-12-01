@@ -212,9 +212,11 @@ func (c *SnmpConfig) OIDs() {
 			fatal("no oid for col:", col)
 		}
 		// just named columns
-		if len(c.PortFile) > 0 {
+		if len(c.PortFile) > 0 && strings.HasPrefix(col, "if") == true {
 			for k := range c.asOID {
+				log.Println("before", c.oids)
 				c.oids = append(c.oids, base+"."+k)
+				log.Println("after", c.oids)
 			}
 		} else if c.mib.Scalers {
 			// or plain old scaler instances
@@ -222,6 +224,7 @@ func (c *SnmpConfig) OIDs() {
 		} else {
 			c.oids = append(c.oids, base)
 		}
+		log.Println("after !!!!", c.oids)
 	}
 	if len(c.mib.Columns) > 0 {
 		spew("COLUMNS", c.mib.Columns)
