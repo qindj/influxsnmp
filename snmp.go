@@ -52,6 +52,7 @@ func getPoint(cfg *SnmpConfig, pdu gosnmp.SnmpPDU) *pduValue {
 		return nil
 	}
 	if len(col) == 0 {
+		col = name
 		log.Println("empty col for:", cfg.asOID[suffix])
 		return nil // not an OID of interest
 	}
@@ -77,6 +78,7 @@ func bulkPoint(cfg *SnmpConfig, pdu gosnmp.SnmpPDU) *pduValue {
 		return nil
 	}
 	if len(col) == 0 {
+		col = name
 		log.Println("empty col for:", suffix)
 		return nil // not an OID of interest
 	}
