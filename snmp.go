@@ -43,7 +43,7 @@ func getPoint(cfg *SnmpConfig, pdu gosnmp.SnmpPDU) *pduValue {
 		name, ok = oidToName[pdu.Name]
 	}
 
-	log.Println("OID TO NAME", name, col, pdu.Name, pdu.Value)
+	log.Println("OID TO NAME", name, col, pdu.Name, pdu.Value, oidToName)
 	if verbose {
 		log.Println("ROOT:", root, "SUFFIX:", suffix, "COL:", col, "NAME:", "VALUE:", pdu.Value)
 	}
@@ -68,7 +68,7 @@ func bulkPoint(cfg *SnmpConfig, pdu gosnmp.SnmpPDU) *pduValue {
 	if len(name) == 0 {
 		name, ok = oidToName[pdu.Name]
 	}
-	log.Println("BULK OID TO NAME", name, col, pdu.Name, pdu.Value)
+	log.Println("BULK OID TO NAME", name, col, pdu.Name, pdu.Value, oidToName)
 	if verbose {
 		log.Println("ROOT:", root, "SUFFIX:", suffix, "COL:", col, "NAME:", "VALUE:", pdu.Value)
 	}
