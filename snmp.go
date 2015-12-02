@@ -112,6 +112,7 @@ func snmpStats(snmp *gosnmp.GoSNMP, cfg *SnmpConfig) error {
 		if verbose {
 			log.Println("SNMP GET CNT:", len(pkt.Variables))
 		}
+		log.Println("PKT", pkt)
 		for _, pdu := range pkt.Variables {
 			val := getPoint(cfg, pdu)
 			if val == nil {
@@ -120,7 +121,9 @@ func snmpStats(snmp *gosnmp.GoSNMP, cfg *SnmpConfig) error {
 			if val.value == nil {
 				continue
 			}
+			log.Println("VAL", val)
 			pt := makePoint(cfg.Host, val, now)
+			log.Println("PT", pt)
 			bps.Points = append(bps.Points, pt)
 
 		}
