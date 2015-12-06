@@ -114,6 +114,21 @@ column = ifInDiscards
 column = ifOutErrors
 column = ifOutDiscards
 
+[mibs "influxdb"]
+
+name = system
+column = sysUpTime
+name = ifXEntry
+scalers = false
+column = ifHCInOctets
+column = ifHCInUcastPkts
+column = ifHCOutOctets
+column = ifHCOutUcastPkts
+column = ifInErrors
+column = ifInDiscards
+column = ifOutErrors
+column = ifOutDiscards
+
 [mibs "lab-mx80-2"]
 
 column = sysUpTime
