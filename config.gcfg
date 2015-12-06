@@ -178,8 +178,16 @@ column = ifOutDiscards
 
 [mibs "lab-mx80-1"]
 
-name = system
 column = sysUpTime
+column = jnxOperatingTempMX80TempTFEBMX
+column = jnxOperatingTempMX80TempTFEBIntake
+column = jnxOperatingTempMX80TempRE
+column = jnxOperatingCPUMX80FPC0
+column = jnxOperatingCPUMX80FPC1
+column = jnxOperatingCPUTFEB
+column = jnxOperatingCPURE
+
+
 name = ifXEntry
 scalers = false
 column = ifHCInOctets
