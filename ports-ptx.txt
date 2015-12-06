@@ -1,0 +1,5 @@
+# snmp_column label_for_metrics
+ae5 ae5
+ae5.10 ae5.10
+et-4/0/1 et-4/0/1
+et-4/0/13 et-4/0/3

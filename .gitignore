@@ -26,8 +26,5 @@ _testmain.go
 # ignore build artifact but allow init script of same name
 /influxsnmp
 
-# normal working files
-config.gcfg
-ports.txt
 
 log
