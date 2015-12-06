@@ -21,15 +21,15 @@ freq = 30
 ; this is a wildcard -- becomes default
 ; if a 'snmp' section name is not otherwise specified
 
-;[snmp "influxdb"]
+[snmp "influxdb"]
 
-;host = 10.0.15.11
-;community = test1252serc
-;port = 161
-;timeout = 20
-;retries = 5
-;repeat = 0
-;freq = 30
+host = 10.0.15.11
+community = test1252serc
+port = 161
+timeout = 20
+retries = 5
+repeat = 0
+freq = 30
 
 ;debug = false
 ; if port file is ommited then all columns will be retrieved'
@@ -62,41 +62,41 @@ freq = 30
 
 portfile = ports.txt
 
-;[snmp "lab-mx80-1"]
+[snmp "lab-mx80-1"]
 
-;host = 10.15.0.103
-;community = by32g1b50n
-;port = 161
-;timeout = 20
-;retries = 5
-;repeat = 0
-;freq = 30
+host = 10.15.0.103
+community = by32g1b50n
+port = 161
+timeout = 20
+retries = 5
+repeat = 0
+freq = 30
 
 
-;[snmp "cisco"]
+[snmp "cisco"]
 
-;host = 10.15.0.5
-;community = by32g1b50n
-;port = 161
-;timeout = 20
-;retries = 5
-;repeat = 0
-;freq = 30
+host = 10.15.0.5
+community = by32g1b50n
+port = 161
+timeout = 20
+retries = 5
+repeat = 0
+freq = 30
 
-;[mibs "cisco"]
+[mibs "cisco"]
 
-;name = system
-;column = sysUpTime
-;name = ifXEntry
-;scalers = false
-;column = ifHCInOctets
-;column = ifHCInUcastPkts
-;column = ifHCOutOctets
-;column = ifHCOutUcastPkts
-;column = ifInErrors
-;column = ifInDiscards
-;column = ifOutErrors
-;column = ifOutDiscards
+name = system
+column = sysUpTime
+name = ifXEntry
+scalers = false
+column = ifHCInOctets
+column = ifHCInUcastPkts
+column = ifHCOutOctets
+column = ifHCOutUcastPkts
+column = ifInErrors
+column = ifInDiscards
+column = ifOutErrors
+column = ifOutDiscards
 
 
 [mibs "localhost"]
@@ -107,12 +107,12 @@ name = ifXEntry
 scalers = false
 column = ifHCInOctets
 column = ifHCInUcastPkts
-;column = ifHCOutOctets
-;column = ifHCOutUcastPkts
-;column = ifInErrors
-;column = ifInDiscards
-;column = ifOutErrors
-;column = ifOutDiscards
+column = ifHCOutOctets
+column = ifHCOutUcastPkts
+column = ifInErrors
+column = ifInDiscards
+column = ifOutErrors
+column = ifOutDiscards
 
 [mibs "lab-mx80-2"]
 
@@ -129,13 +129,13 @@ column = jnxOperatingCPURE
 name = ifXEntry
 scalers = false
 column = ifHCInOctets
-;column = ifHCInUcastPkts
-;column = ifHCOutOctets
-;column = ifHCOutUcastPkts
-;column = ifInErrors
-;column = ifInDiscards
-;column = ifOutErrors
-;column = ifOutDiscards
+column = ifHCInUcastPkts
+column = ifHCOutOctets
+column = ifHCOutUcastPkts
+column = ifInErrors
+column = ifInDiscards
+column = ifOutErrors
+column = ifOutDiscards
 
 [mibs "ptx"]
 
@@ -161,20 +161,20 @@ column = ifOutErrors
 column = ifOutDiscards
 
 
-;[mibs "lab-mx80-1"]
+[mibs "lab-mx80-1"]
 
-;name = system
-;column = sysUpTime
-;name = ifXEntry
-;scalers = false
-;column = ifHCInOctets
-;column = ifHCInUcastPkts
-;column = ifHCOutOctets
-;column = ifHCOutUcastPkts
-;column = ifInErrors
-;column = ifInDiscards
-;column = ifOutErrors
-;column = ifOutDiscards
+name = system
+column = sysUpTime
+name = ifXEntry
+scalers = false
+column = ifHCInOctets
+column = ifHCInUcastPkts
+column = ifHCOutOctets
+column = ifHCOutUcastPkts
+column = ifInErrors
+column = ifInDiscards
+column = ifOutErrors
+column = ifOutDiscards
 
 ;[mibs "*"]
 
