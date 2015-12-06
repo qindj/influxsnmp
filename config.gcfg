@@ -134,11 +134,11 @@ column = ifOutDiscards
 column = sysUpTime
 column = jnxOperatingTempMX80TempTFEBMX
 column = jnxOperatingTempMX80TempTFEBIntake
-column = jnxOperatingTempMX80TempRE
+column = jnxOperatingTempRE0
 column = jnxOperatingCPUMX80FPC0
 column = jnxOperatingCPUMX80FPC1
 column = jnxOperatingCPUTFEB
-column = jnxOperatingCPURE
+column = jnxOperatingCPURE0
 
 
 name = ifXEntry
@@ -156,10 +156,10 @@ column = ifOutDiscards
 
 column = sysUpTime
 column = jnxOperatingCpuPtxFpc4	
-column = jnxOperatingCpuPtxRERe0
+column = jnxOperatingCPURE0
 column = jnxOperatingCpuPtxRERe1
 column = jnxOperatingTempPtxFpc4
-column = jnxOperatingTempPtxRERe0
+column = jnxOperatingTempRE0
 column = jnxOperatingTempPtxRERe1
 
 
@@ -181,11 +181,11 @@ column = ifOutDiscards
 column = sysUpTime
 column = jnxOperatingTempMX80TempTFEBMX
 column = jnxOperatingTempMX80TempTFEBIntake
-column = jnxOperatingTempMX80TempRE
+column = jnxOperatingTempRE0
 column = jnxOperatingCPUMX80FPC0
 column = jnxOperatingCPUMX80FPC1
 column = jnxOperatingCPUTFEB
-column = jnxOperatingCPURE
+column = jnxOperatingCPURE0 
 
 
 name = ifXEntry
