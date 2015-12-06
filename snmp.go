@@ -122,9 +122,9 @@ func snmpStats(snmp *gosnmp.GoSNMP, cfg *SnmpConfig) error {
 			if val.value == nil {
 				continue
 			}
-			log.Println("VAL", val)
+			//log.Println("VAL", val)
 			pt := makePoint(cfg.Host, val, now)
-			log.Println("PT", pt)
+			//log.Println("PT", pt)
 			bps.Points = append(bps.Points, pt)
 
 		}
