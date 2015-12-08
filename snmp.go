@@ -113,7 +113,7 @@ func snmpStats(snmp *gosnmp.GoSNMP, cfg *SnmpConfig) error {
 		if verbose {
 			log.Println("SNMP GET CNT:", len(pkt.Variables))
 		}
-		log.Println("PKT", pkt)
+		//log.Println("PKT", pkt)
 		for _, pdu := range pkt.Variables {
 			val := getPoint(cfg, pdu)
 			if val == nil {
